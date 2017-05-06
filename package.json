@@ -15,6 +15,10 @@
     "rita": "^1.1.51",
     "tabletop": "^1.5.2",
     "tracery-grammar": "^2.7.3",
-    "twit": "^2.2.5"
+    "twit": "^2.2.5",
+    "@ffmpeg-installer/ffmpeg": "^1.0.9",
+    "fluent-ffmpeg": "^2.1.0",
+    "jsmidgen": "^0.1.5"
+
   }
 }
