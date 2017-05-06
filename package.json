@@ -10,6 +10,9 @@
   "author": "IbrahimSassi",
   "license": "ISC",
   "dependencies": {
-    "twit": "^2.2.5"
+    "twit": "^2.2.5",
+    "csv-parse": "^1.2.0",
+    "rita": "^1.1.51"
+
   }
 }
