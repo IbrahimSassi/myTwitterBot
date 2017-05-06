@@ -1,5 +1,8 @@
 var Twit = require('twit')
 var config = require('./config');
+var request = require('request')
+var fs = require('fs')
+
 var bot = new Twit({
   consumer_key:        config.consumer_key,
   consumer_secret:      config.consumer_secret,
@@ -65,4 +68,33 @@ function getBotTimeline()
     })
 }
 
-getBotTimeline();
+//getBotTimeline();
+
+/*
+like smthg
+bot.post('favorites/create',{id:'******'},function(err,data,response){
+            if(err)
+        console.log(err);
+})
+*/
+
+//random stream
+/*
+var stream = bot.stream('statuses/sample');
+
+stream.on('tweet',function(tweet){
+    console.log(tweet.text)
+})
+*/
+
+//stream with filter
+/*
+var stream = bot.stream('statuses/filter',{
+    track :'Angular'
+});
+
+stream.on('tweet',function(tweet){
+    console.log(tweet.text)
+})
+*/
+
