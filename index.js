@@ -8,11 +8,61 @@ var bot = new Twit({
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
 
-
+/*
 bot.post('statuses/update',{status:'Hello World'},function(err,data,response){
     if(err)
     console.log(err);
     else
     console.log(data.text +' was tweeted');
 })
+*/
 
+/*
+bot.get('friends/list',
+ { screen_name: 'IbrahimSassi12' },  function (err, data, response) {
+      if(err)
+    console.log(err);
+
+data.users.forEach(function(element) {
+    console.log(element.screen_name)
+}, this);
+})
+*/
+
+//lookup for relation
+/*
+bot.get('friendships/lookup',
+ { screen_name: 'MedFirasOuert' },  function (err, data, response) {
+      if(err)
+    console.log(err);
+    console.log(data);
+})
+*/
+
+//send message
+/*
+bot.post('direct_messages/new',{
+    screen_name:'MlikiHakim',text:'Hello Yo From Api'},  function (err, data, response) {
+      if(err)
+    console.log(err);
+    console.log(data);
+})
+*/
+
+//stream timeline
+function getBotTimeline()
+{
+    bot.get('statuses/home_timeline',{count:5},  function (err, data, response) {
+        if(err)
+        console.log(err);
+
+        data.forEach(function(element) {
+                console.log(element.text);
+                console.log(element.user.screen_name);
+
+                }, this);
+
+    })
+}
+
+getBotTimeline();
