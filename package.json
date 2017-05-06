@@ -12,7 +12,8 @@
   "dependencies": {
     "twit": "^2.2.5",
     "csv-parse": "^1.2.0",
-    "rita": "^1.1.51"
+    "rita": "^1.1.51",
+    "@google-cloud/vision": "^0.8.0"
 
   }
 }
