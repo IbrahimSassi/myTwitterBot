@@ -1,0 +1,1 @@
+# a twitter bot that let you interface with the Twitter API using Twit.js, which allows us to post statuses, search tweets, and interact with followers, analyze photo , tweet data from Google Spreadsheets, and compose and tweet a song for an audio bot , using RiTa.js, Google’s Cloud Vision API, and Tracery
